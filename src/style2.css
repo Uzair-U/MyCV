@@ -164,27 +164,24 @@ nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0;
 }
 
 .skills li {
   width: 350px;
-  height: auto; /* Allow the height to adjust */
+  height: 150px;
   background-color: #f7f7f7;
   margin-right: 20px;
   margin-bottom: 20px;
   text-align: center;
-  line-height: 1.5;
+  line-height: 150px;
   border-radius: 5px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
-  word-wrap: break-word; /* Allow text to break onto the next line */
-  padding: 15px;
 }
 
 .skills li:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   color: #0026ff;
 }
 
@@ -199,7 +196,6 @@ nav ul li a:hover {
   font-size: 14px;
   margin: 0;
 }
-
 
 /* Education section styles */
 .Education,
