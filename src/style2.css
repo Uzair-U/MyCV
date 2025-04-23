@@ -59,27 +59,35 @@ nav ul li a:hover{color:#c5cae9;}
 .information h2{font-size:2.5rem;margin-bottom:2rem;}
 .information p{font-size:1.2rem;line-height:1.8;margin-bottom:2rem;}
 
-/* Skill card */
+/* ───────────── Skill Cards Grid ───────────── */
+.skills{
+  margin-top:50px;
+  display:grid;                  /* Use CSS Grid for more control */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Auto-fitting grid */
+  gap:20px;                      /* Space between the cards */
+}
+
+.skills ul{
+  margin:0;                       /* Remove margin from the ul */
+  padding:0;
+}
+
 .skills li{
-  width:350px;                 
-  min-height:150px;
-  margin:0 20px 20px 0;
-  padding:0 18px;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  text-align:center;
-  line-height:1.4;
-  white-space:normal;
-  word-wrap:break-word;
-
   background-color:#f7f7f7;
   border-radius:5px;
   box-shadow:0 5px 15px rgba(0,0,0,.1);
+  padding:10px;                  /* Add some padding to each skill */
+  text-align:center;
   transition:all .3s ease;
+  line-height:1.4;                /* Default line-height for wrapping text */
 }
+
+.skills li:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 30px rgba(0,0,0,.2);
+  color:#0026ff;
+}
+
 
 /* ───────────── Education & Experience ───────────── */
 .Education,.Experience{margin:0 auto;max-width:700px;}
