@@ -154,21 +154,32 @@ nav ul li a:hover {
 /* Skills styles */
 .skills {
   margin-top: 50px;
+}
+
+.skills h2 {
+  text-align: center;
+}
+
+.skills ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;   /* Ensures skills are centered */
-  gap: 20px;                 /* Adds space between the items */
+  justify-content: center;
+  padding: 0;
 }
 
 .skills li {
-  width: 350px;              /* Keeps fixed width */
-  height: 150px;             /* Fixed height for consistency */
+  width: 350px;
+  height: auto; /* Allow the height to adjust */
   background-color: #f7f7f7;
+  margin-right: 20px;
+  margin-bottom: 20px;
   text-align: center;
-  line-height: 150px;        /* Centers the text vertically */
+  line-height: 1.5;
   border-radius: 5px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  word-wrap: break-word; /* Allow text to break onto the next line */
+  padding: 15px;
 }
 
 .skills li:hover {
@@ -188,6 +199,7 @@ nav ul li a:hover {
   font-size: 14px;
   margin: 0;
 }
+
 
 /* Education section styles */
 .Education,
