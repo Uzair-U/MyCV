@@ -62,24 +62,27 @@ nav ul li a:hover{color:#c5cae9;}
 /* ───────────── Skill Cards Grid ───────────── */
 .skills{
   margin-top:50px;
-  display:grid;                  /* Use CSS Grid for more control */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Auto-fitting grid */
-  gap:20px;                      /* Space between the cards */
+  display:grid;                        /* Use CSS Grid for control */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Auto-wrap with a minimum size */
+  gap:20px;                            /* Space between the cards */
+  justify-items: center;               /* Center the items inside the grid */
 }
 
 .skills ul{
-  margin:0;                       /* Remove margin from the ul */
+  margin:0;
   padding:0;
 }
 
 .skills li{
+  width:250px;                         /* Fixed width for each card */
+  min-height:150px;                    /* Keep a minimum height */
   background-color:#f7f7f7;
   border-radius:5px;
   box-shadow:0 5px 15px rgba(0,0,0,.1);
-  padding:10px;                  /* Add some padding to each skill */
+  padding:10px;
   text-align:center;
   transition:all .3s ease;
-  line-height:1.4;                /* Default line-height for wrapping text */
+  line-height:1.4;
 }
 
 .skills li:hover{
@@ -87,6 +90,7 @@ nav ul li a:hover{color:#c5cae9;}
   box-shadow:0 10px 30px rgba(0,0,0,.2);
   color:#0026ff;
 }
+
 
 
 /* ───────────── Education & Experience ───────────── */
