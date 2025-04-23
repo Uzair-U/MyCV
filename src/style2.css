@@ -59,21 +59,26 @@ nav ul li a:hover{color:#c5cae9;}
 .information h2{font-size:2.5rem;margin-bottom:2rem;}
 .information p{font-size:1.2rem;line-height:1.8;margin-bottom:2rem;}
 
-/* ───────────── Skills ───────────── */
-.skills{margin-top:50px;}
-.skills h2{text-align:center;}
-.skills ul{display:flex;flex-wrap:wrap;justify-content:center;}
-
+/* Skill card */
 .skills li{
-  width:350px;height:150px;background-color:#f7f7f7;
-  margin:0 20px 20px 0;text-align:center;line-height:150px;
-  border-radius:5px;box-shadow:0 5px 15px rgba(0,0,0,.1);
+  width:350px;                 
+  min-height:150px;
+  margin:0 20px 20px 0;
+  padding:0 18px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  text-align:center;
+  line-height:1.4;
+  white-space:normal;
+  word-wrap:break-word;
+
+  background-color:#f7f7f7;
+  border-radius:5px;
+  box-shadow:0 5px 15px rgba(0,0,0,.1);
   transition:all .3s ease;
-}
-.skills li:hover{
-  transform:translateY(-5px);
-  box-shadow:0 10px 30px rgba(0,0,0,.2);
-  color:#0026ff;
 }
 
 /* ───────────── Education & Experience ───────────── */
